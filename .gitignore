@@ -1,0 +1,11 @@
+# 忽略编译输出
+Debug/
+Release/
+*.o
+*.hex
+*.bin
+*.elf
+
+# 忽略 Python 缓存和本地数据文件
+__pycache__/
+telemetry_data.csv
