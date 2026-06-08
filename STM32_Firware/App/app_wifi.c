@@ -189,8 +189,9 @@ case WIFI_STATE_CHECK_AUTO:
                 
             case WIFI_STATE_START_TCP:
                 // ⚠️ 请确保这里的 IP 已经改成了你 Windows 的 ipconfig 真实无线 IP！
-                printf("[TCP] Connecting to Server 192.168.31.126:8080...\r\n");
-                WiFi_Send_Cmd("AT+CIPSTART=\"TCP\",\"192.168.31.126\",8080\r\n");
+                // 可以在终端使用ipconfig进行查询
+                printf("[TCP] Connecting to Server 192.168.xx.xxx:8080...\r\n");
+                WiFi_Send_Cmd("AT+CIPSTART=\"TCP\",\"192.168.xx.xxx\",8080\r\n");
                 current_wifi_state = WIFI_STATE_SET_TRANS;
                 timeout_counter = 0;
                 break;
