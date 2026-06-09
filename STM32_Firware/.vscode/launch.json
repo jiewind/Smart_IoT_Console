@@ -1,0 +1,20 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Cortex Debug",
+            "cwd": "${workspaceFolder}",
+            "executable": "${workspaceFolder}/build/Smart_Terminal.elf", 
+            "request": "launch",
+            "type": "cortex-debug",
+            "runToEntryPoint": "main",
+            "servertype": "openocd",
+            "device": "STM32F103C8", 
+            "gdbPath": "gdb-multiarch",
+            "configFiles": [
+                "interface/stlink.cfg",
+                "target/stm32f1x.cfg" 
+            ]
+        }
+    ]
+}
